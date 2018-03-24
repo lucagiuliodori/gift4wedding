@@ -1,0 +1,1096 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".StartActivity"
+    android:contextClickable="false"
+    android:visibility="visible">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+        -->
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="visible"
+                android:id="@+id/flInfo" >
+
+                <LinearLayout
+                    style="?metaButtonBarStyle"
+                    tools:ignore="UselessParent"
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/black_overlay"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttAvanti_IN"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Inizia"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="GIFT 4\nWEDDING"
+                        android:id="@+id/lblTitleInfo"
+                        android:layout_gravity="center_horizontal|top"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="50dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="263dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="CON CINQUE SEMPLICI PASSI QUESTA APPLICAZIONE TI AIUTERA&apos; A SCEGLIERE LA CIFRA GIUSTA DA REGALARE AGLI SPOSI.\n\nCHE COSA ASPETTI?!\nINIZIA SUBITO E BUONA FESTA!"
+                        android:id="@+id/lblInfo"
+                        android:layout_gravity="center|left|right"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="23dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rev."
+                        android:id="@+id/lblRev"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="bottom|right" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="invisible"
+                android:id="@+id/flNumeroPartecipanti">
+
+                <LinearLayout
+                    style="?metaButtonBarStyle"
+                    tools:ignore="UselessParent"
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/black_overlay"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttIndietro_NP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Info"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttAvanti_NP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Avanti"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="NUMERO DI PARTECIPANTI"
+                        android:id="@+id/lblNumeroPartecipanti"
+                        android:layout_gravity="center_horizontal|top"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="45dp"
+                        android:textAlignment="center"
+                        android:singleLine="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="(BAMBINI ESCLUSI)"
+                        android:id="@+id/lblBambiniEsclusi"
+                        android:layout_gravity="center_horizontal|top"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/txtNumeroPartecipanti"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    android:numeric="decimal"
+                    android:background="#03b7f2" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="invisible"
+                android:id="@+id/flNumeroBambini">
+
+                <LinearLayout
+                    style="?metaButtonBarStyle"
+                    tools:ignore="UselessParent"
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/black_overlay"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttIndietro_NB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Indietro"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttAvanti_NB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Avanti"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="NUMERO DI BAMBINI"
+                    android:id="@+id/lblNumeroBambini"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="50dp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/txtNumeroBambini"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    android:numeric="decimal"
+                    android:background="#03b7f2" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="invisible"
+                android:id="@+id/flRelazioneParentela">
+
+                <LinearLayout
+                    style="?metaButtonBarStyle"
+                    tools:ignore="UselessParent"
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/black_overlay"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttIndietro_RP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Indietro"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttAvanti_RP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Avanti"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="RELAZIONE DI PARENTELA"
+                    android:id="@+id/lblRelazioneParentela"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="50dp"
+                    android:textAlignment="center" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amico"
+                        android:id="@+id/rbAmico"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cugino"
+                        android:id="@+id/rbCugino"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fratello"
+                        android:id="@+id/rbFratello"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Testimone"
+                        android:id="@+id/rbTestimone"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Genitore"
+                        android:id="@+id/rbGenitore"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp" />
+
+                </RadioGroup>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="invisible"
+                android:id="@+id/flCoefficienteSpacconaggine">
+
+                <LinearLayout
+                    style="?metaButtonBarStyle"
+                    tools:ignore="UselessParent"
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/black_overlay"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttIndietro_CS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Indietro"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttAvanti_CS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Avanti"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="COEFFICIENTI SPACCONAGGINE"
+                    android:id="@+id/lblCoefficienteSpacconaggine"
+                    android:layout_gravity="center_horizontal|top"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:textAlignment="center" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="false">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tirchio"
+                        android:id="@+id/rbTirchio"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Normale"
+                        android:id="@+id/rbNormale"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bella figura"
+                        android:id="@+id/rbBellaFigura"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spaccone"
+                        android:id="@+id/rbSpaccone"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gradasso"
+                        android:id="@+id/rbGradasso"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:padding="5dp" />
+                </RadioGroup>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="invisible"
+                android:id="@+id/flCostoRicevimento">
+
+                <LinearLayout
+                    android:id="@+id/fullscreen_content_controls"
+                    style="?metaButtonBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/black_overlay"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttIndietro_CR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Indietro"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/bttAvanti_CR"
+                        style="?metaButtonBarButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Calcola"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="COSTO RICEVIMENTO"
+                        android:id="@+id/lblCostoRicevimento"
+                        android:layout_gravity="center_horizontal|top"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="50dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="(STIMATO)"
+                        android:id="@+id/lblStimato"
+                        android:layout_gravity="center_horizontal|top"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/txtCostoRicevimento"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    android:numeric="decimal"
+                    android:background="#03b7f2" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="invisible"
+                android:id="@+id/flRegalo">
+
+                <LinearLayout
+                    style="?metaButtonBarStyle"
+                    tools:ignore="UselessParent"
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@color/black_overlay"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttIndietro_RC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Indietro"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+
+                    <Button
+                        style="?metaButtonBarButtonStyle"
+                        android:id="@+id/bttAvanti_RC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NUOVO"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="REGALO CONSIGLIATO"
+                        android:id="@+id/lblRegaloConsigliato"
+                        android:layout_gravity="center_horizontal|top"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="50dp"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="0"
+                            android:id="@+id/lblRegalo"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:textSize="50dp"
+                            android:paddingTop="40dp"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/lblNotaRegalo1"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:paddingTop="20dp"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/lblNotaRegalo2"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:paddingTop="20dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="invisible"
+                android:id="@+id/flSettings" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/scrollView"
+                        android:layout_weight="0.85"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="397dp"
+                            android:layout_weight="0.85"
+                            android:layout_gravity="center_horizontal|top">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="COEFFICIENTI PARENTELA"
+                                android:id="@+id/textView14"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:textAlignment="viewStart"
+                                android:scrollIndicators="right" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Amico"
+                                    android:id="@+id/textView13"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffAmico"
+                                    android:layout_weight="1"
+                                    android:text="1"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Cugino"
+                                    android:id="@+id/textView15"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffCugino"
+                                    android:layout_weight="1"
+                                    android:text="1,2"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Fratello"
+                                    android:id="@+id/textView20"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffFratello"
+                                    android:layout_weight="1"
+                                    android:text="1,5"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Testimone"
+                                    android:id="@+id/textView19"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffTestimone"
+                                    android:layout_weight="1"
+                                    android:text="1,8"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Genitore"
+                                    android:id="@+id/textView18"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtGenitore"
+                                    android:layout_weight="1"
+                                    android:text="2"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="COEFFICIENTI SPACCONAGGINE"
+                                android:id="@+id/textView11"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:textAlignment="viewStart"
+                                android:scrollIndicators="right" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Tirchio"
+                                    android:id="@+id/textView17"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffTirchio"
+                                    android:layout_weight="1"
+                                    android:text="0,8"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Normale"
+                                    android:id="@+id/textView21"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffNormale"
+                                    android:layout_weight="1"
+                                    android:text="1"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Bella figura"
+                                    android:id="@+id/textView22"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffBellaFigura"
+                                    android:layout_weight="1"
+                                    android:text="1,2"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Spaccone"
+                                    android:id="@+id/textView23"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffSpaccone"
+                                    android:layout_weight="1"
+                                    android:text="1,3"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Gradasso"
+                                    android:id="@+id/textView24"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp"
+                                    android:textAlignment="viewStart"
+                                    android:scrollIndicators="right"
+                                    android:width="280dp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:ems="10"
+                                    android:id="@+id/txtCoeffGradasso"
+                                    android:layout_weight="1"
+                                    android:text="1,5"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        style="?metaButtonBarStyle"
+                        tools:ignore="UselessParent"
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:background="@color/black_overlay"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="?metaButtonBarButtonStyle"
+                            android:id="@+id/bttSalvaAvanzate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Salva"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

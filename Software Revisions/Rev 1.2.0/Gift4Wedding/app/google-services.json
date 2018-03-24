@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "998512521242",
+    "firebase_url": "https://gift4wedding-d742a.firebaseio.com",
+    "project_id": "gift4wedding-d742a",
+    "storage_bucket": "gift4wedding-d742a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998512521242:android:14cc645ff0079cc6",
+        "android_client_info": {
+          "package_name": "com.gift4wedding.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998512521242-jnvqffcdervef3v33rl5sam14orsijmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY9NnDLSIu1yewaa_QqF5qOTZYSKY8bkM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
